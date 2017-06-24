@@ -8,4 +8,4 @@
 
 ## screenshot
 
-![image](https://github.com/UsingMisz/screenshots/04.png)
+![image](/screenshots/04.png)
