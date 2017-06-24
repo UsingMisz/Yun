@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@mipmap/musiclist_title"
+    android:id="@+id/musiclist_title"
+    android:layout_marginTop="32dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/musiclist_select"
+        android:layout_below="@id/musiclist_title"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="22dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/music_list_select"
+            />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="华语"
+             android:textSize="10sp"
+
+             android:textColor="@color/black"
+             android:layout_centerVertical="true"
+             android:id="@+id/music_list_select_textView"/>
+
+    </RelativeLayout>
+</RelativeLayout>

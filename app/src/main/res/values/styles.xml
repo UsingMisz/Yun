@@ -1,0 +1,147 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/toobar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+         <item name="colorPrimaryDark">@color/toobar</item>
+        <!--android 4.4-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--修改DrawerLayout颜色-->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+
+    <style name="DrawerLayoutTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/GreyWhite</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="DrawerLayout_login_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:hint">10sp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
+         <item name="android:background">@drawable/button_shape</item>
+    </style>
+
+    <style name="DrawerLayout_common_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="DrawerLayout_common_pict">
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_centerVertical">true</item>
+         <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+     <style name="DrawerLayout_common_TextView">
+          <item name="android:layout_height">wrap_content</item>
+          <item name="android:layout_width">wrap_content</item>
+          <item name="android:layout_centerVertical">true</item>
+          <item name="android:layout_marginLeft">10dp</item>
+         <item name="android:textSize">10sp</item>
+     </style>
+    <style name="tabLayout">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Fragment_music2_ListView_ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Fragment_music2_listView_TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Fragment_music2_listView_smallTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/GreyWhite</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Fragment_music2_listView_line">
+        <item name="android:background">@color/GreyWhite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+
+    </style>
+
+    <style name="Fragment_music_personality_viewPagerDown">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+
+    </style>
+
+    <style name="Fragment_music_personality_fm_TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="Fragment_music_personality_tuijian">
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Fragment_music_personality_arrow">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Activity_Login_TextView">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/GreyWhite</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+
+    <style name="Activity_Login_Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/Red</item>
+        <item name="android:background">@drawable/login_button_shape</item>
+    </style>
+
+    <style name="name_textview">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+</resources>

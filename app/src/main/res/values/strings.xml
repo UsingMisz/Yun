@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Yun</string>
+    <string name="search">搜索</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <string name="login">自动登录</string>
+    <string name="drawerText">320K高音质无线下载，手机电脑多端同步</string>
+    <string name="drawerText1">登录网易云音乐</string>
+    <!--/////////////////////////////////////////////////-->
+    <string name="drawerLayout_news">我的消息</string>
+    <string name="drawerLayout_vip">会员中心</string>
+    <string name="drawerLayout_shop">商城</string>
+    <string name="drawerLayout_noMoney">在线听歌免流量</string>
+    <string name="drawerLayout_mai">在线听歌免流量</string>
+    <string name="drawerLayout_cloth">主题皮肤</string>
+    <string name="drawerLayout_night">夜间模式</string>
+    <string name="drawerLayout_time">定时停止播放</string>
+    <string name="drawerLayout_saoYiSao">扫一扫</string>
+    <string name="drawerLayout_clock">音乐闹钟</string>
+    <string name="drawerLayout_Driver">驾驶模式</string>
+    <string name="drawerLayout_Setting">设置</string>
+    <string name="drawerLayout_Logout">退出应用</string>
+    <!--///////////////////////////////////////////////////////-->
+  <string name="tabLayouts_music_personality">个性推荐</string>
+    <string name="tabLayouts_music_musicList">歌单</string>
+    <string name="tabLayouts_music_ZhuAudio">主播电台</string>
+    <string name="tabLayouts_music_pai">排行榜</string>
+    <!--////////////////////////////////////////////////////////////-->
+    <string name="loaction_music">本地音乐</string>
+    <string name="recent_musci">最近播放</string>
+    <string name="download_manager">下载管理</string>
+    <string name="my_songer">我的歌手</string>
+    <!--///////////////////////////////////////////////////-->
+    <string name="fm">私人FM</string>
+    <string name="birthday">每日歌曲推荐</string>
+    <string name="pai">云音乐热歌榜</string>
+    <!--//////////////////////////////////////////////////-->
+    <string name="personality_tuijian">推荐歌单</string>
+    <string name="personality_dujia">独家放送</string>
+    <string name="personality_zuixin">最新音乐</string>
+    <string name="personality_mv">推荐mv</string>
+    <string name="personality_zhuanlan">精品专栏</string>
+    <string name="personality_diantai">主播电台</string>
+    <!--///////////////////////////////////////////////////-->
+    <string name="else_login">其他方式登录</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="32dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/personality_viewPagerT">
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/personality_viewPager">
+
+    </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/personality_viewPager_circle"
+            android:layout_below="@id/personality_viewPager"
+            android:layout_marginTop="-35px"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+        </LinearLayout>
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/personality_viewPagerT"
+        android:id="@+id/personality_viewPager_s"
+        android:orientation="horizontal"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+       <ImageView
+           style="@style/Fragment_music_personality_viewPagerDown"
+           android:background="@mipmap/fm"
+           android:id="@+id/fragment_music_personality_fm"
+           />
+        <TextView
+            style="@style/Fragment_music_personality_fm_TextView"
+            android:text="@string/fm"
+            android:layout_below="@id/fragment_music_personality_fm"
+            />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                style="@style/Fragment_music_personality_viewPagerDown"
+                android:background="@mipmap/birthday"
+                android:id="@+id/fragment_music_personality_birthday"
+                />
+            <TextView
+                style="@style/Fragment_music_personality_fm_TextView"
+                android:text="@string/birthday"
+                android:layout_below="@id/fragment_music_personality_birthday"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                style="@style/Fragment_music_personality_viewPagerDown"
+                android:background="@mipmap/pai"
+                android:id="@+id/fragment_music_personality_pai"
+                />
+            <TextView
+                style="@style/Fragment_music_personality_fm_TextView"
+                android:text="@string/pai"
+                android:layout_below="@id/fragment_music_personality_pai"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+<!--线-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/GreyWhite"
+        android:layout_below="@id/personality_viewPager_s"
+        android:id="@+id/personality_viewPager_line">
+
+    </RelativeLayout>
+   <!--推荐歌单-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/personality_tuijian"
+    android:layout_below="@id/personality_viewPager_s">
+    <TextView
+        android:text="@string/personality_tuijian"
+        android:id="@+id/personality_tuijian_textView"
+        style="@style/Fragment_music_personality_tuijian"
+        />
+    <ImageView
+        android:layout_toRightOf="@id/personality_tuijian_textView"
+        android:background="@mipmap/personality_arrow01"
+        style="@style/Fragment_music_personality_arrow"
+        />
+
+
+</RelativeLayout>
+    <!--第一个gridview-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/personality_tuijian"
+    android:layout_marginTop="10dp"
+    android:id="@+id/personality_gridView_Relative">
+    <zzy.com.zidingyi.ui.HotKeyGridView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/personality_tuijian_gridView"
+        android:columnWidth="90dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center">
+    </zzy.com.zidingyi.ui.HotKeyGridView>
+</RelativeLayout>
+<!--主播电台-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personality_zhubodiantai"
+        android:layout_below="@id/personality_gridView_Relative">
+        <TextView
+            android:text="@string/personality_diantai"
+            android:id="@+id/personality_zhubo_textView"
+            style="@style/Fragment_music_personality_tuijian"
+            />
+        <ImageView
+            android:layout_toRightOf="@id/personality_zhubo_textView"
+            android:background="@mipmap/personality_arrow01"
+            style="@style/Fragment_music_personality_arrow"
+            />
+    </RelativeLayout>
+<!--主播电台的gridview-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personality_zhubodiantai"
+        android:layout_marginTop="10dp"
+        android:id="@+id/personality_gridView_zhu_Relative">
+        <zzy.com.zidingyi.ui.HotKeyGridView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/personality_zhu_gridView"
+            android:columnWidth="90dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="1dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center">
+        </zzy.com.zidingyi.ui.HotKeyGridView>
+    </RelativeLayout>
+
+    <!--最新音乐-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personality_zuixin"
+        android:layout_below="@id/personality_gridView_zhu_Relative">
+        <TextView
+            android:text="@string/personality_zuixin"
+            android:id="@+id/personality_zuixin_textView"
+            style="@style/Fragment_music_personality_tuijian"
+            />
+        <ImageView
+            android:layout_toRightOf="@id/personality_zuixin_textView"
+            android:background="@mipmap/personality_arrow01"
+            style="@style/Fragment_music_personality_arrow"
+            />
+    </RelativeLayout>
+    <!--最新音乐的gridview-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personality_zuixin"
+        android:layout_marginTop="10dp"
+        android:id="@+id/personality_gridView_zuixin_Relative">
+        <zzy.com.zidingyi.ui.HotKeyGridView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/personality_zuixin_gridView"
+            android:columnWidth="90dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="1dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center">
+        </zzy.com.zidingyi.ui.HotKeyGridView>
+    </RelativeLayout>
+<!--推荐mv-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personality_mv"
+        android:layout_below="@id/personality_gridView_zuixin_Relative">
+        <TextView
+            android:text="@string/personality_tuijian"
+            android:id="@+id/personality_dujia_textView"
+            style="@style/Fragment_music_personality_tuijian"
+            />
+        <ImageView
+            android:layout_toRightOf="@id/personality_dujia_textView"
+            android:background="@mipmap/personality_arrow01"
+            style="@style/Fragment_music_personality_arrow"
+            />
+    </RelativeLayout>
+    <!--推荐放送gridView-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personality_mv"
+        android:layout_marginTop="10dp"
+        android:id="@+id/personality_gridView_dujia_Relative">
+        <zzy.com.zidingyi.ui.HotKeyGridView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/personality_dujia_gridView"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="1dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center">
+        </zzy.com.zidingyi.ui.HotKeyGridView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

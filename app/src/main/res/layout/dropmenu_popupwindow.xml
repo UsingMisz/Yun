@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_marginTop="1dp"
+        android:id="@+id/dropmenu_listview_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:divider="@color/GreyWhite"
+        android:dividerHeight="1dp"
+        android:scrollbarStyle="outsideOverlay" >
+    </ListView>
+
+
+</RelativeLayout>

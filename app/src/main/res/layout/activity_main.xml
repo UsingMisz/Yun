@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.zzy.com.yun.MainActivity">
+
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context="main.zzy.com.yun.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:id="@+id/activity_toobar"
+        android:background="@color/toobar"
+        android:elevation="16dp"
+        android:paddingTop="20dp"
+        >
+      <include layout="@layout/toobar"/>
+    </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Actionbar_ViewPager"
+            >
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+<include layout="@layout/drawer_layout"/>
+
+
+</android.support.v4.widget.DrawerLayout>

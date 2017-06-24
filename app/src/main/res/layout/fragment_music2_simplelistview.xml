@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        style="@style/Fragment_music2_ListView_ImageView"
+        android:id="@+id/fragment_music2_listView_ImageView"
+        />
+
+    <TextView
+        style="@style/Fragment_music2_listView_TextView"
+        android:id="@+id/fragment_music2_listView_TextView"
+        android:layout_toRightOf="@id/fragment_music2_listView_ImageView" />
+       <TextView
+           style="@style/Fragment_music2_listView_smallTextView"
+           android:id="@+id/fragment_music2_listView_smallTextView"
+           android:layout_toRightOf="@id/fragment_music2_listView_TextView"
+           />
+     <TextView
+        style="@style/Fragment_music2_listView_line"
+         android:id="@+id/listLine"
+         android:layout_toEndOf="@id/fragment_music2_listView_ImageView"
+
+         />
+</RelativeLayout>

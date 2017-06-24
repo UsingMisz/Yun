@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Left_Drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:layout_marginLeft="13dp"
+    android:background="@android:color/white"
+    android:choiceMode="singleChoice"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/drawerLayout_RelativeLayout"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:id="@+id/drawerLayout_bg"
+    android:background="@mipmap/drawerlayout_bg"/>
+    <TextView
+        android:id="@+id/drawerText1"
+        android:layout_centerInParent="true"
+        style="@style/DrawerLayoutTextView"
+        android:text="@string/drawerText"/>
+
+    <TextView
+        android:id="@+id/drawerText2"
+        android:layout_centerHorizontal="true"
+        style="@style/DrawerLayoutTextView"
+        android:layout_above="@id/drawerText1"
+        android:text="@string/drawerText1"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/drawerLayout_touxiang"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/drawerLayout_Login_name"
+        android:layout_below="@id/drawerLayout_touxiang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        style="@style/name_textview"
+        android:visibility="gone"
+        />
+    <Button
+        style="@style/DrawerLayout_login_button"
+        android:id="@+id/drawerLayout_login_button"
+        android:text="@string/login"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/drawerText1"
+
+    />
+</RelativeLayout>
+<!--错误的布局方式应该用listView或RecyclerView。此处因为样式不易改变所以没修改-->
+    <RelativeLayout
+       style="@style/DrawerLayout_common_layout"
+        android:id="@+id/drawerLayout_News">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_news"
+            android:id="@+id/drawerLayout_news"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_news"
+            android:layout_toRightOf="@id/drawerLayout_news"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_vip"
+            android:id="@+id/drawerLayout_vip"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_vip"
+            android:layout_toRightOf="@id/drawerLayout_vip"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_shop"
+            android:id="@+id/drawerLayout_shop"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_shop"
+            android:layout_toRightOf="@id/drawerLayout_shop"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_notmoney"
+            android:id="@+id/drawerLayout_nomoney"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_noMoney"
+            android:layout_toRightOf="@id/drawerLayout_nomoney"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_mai"
+            android:id="@+id/drawerLayout_mai"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_mai"
+            android:layout_toRightOf="@id/drawerLayout_mai"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_cloth"
+            android:id="@+id/drawerLayout_cloth"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_cloth"
+            android:layout_toRightOf="@id/drawerLayout_cloth"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_night"
+            android:id="@+id/drawerLayout_night"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_night"
+            android:layout_toRightOf="@id/drawerLayout_night"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_saoyisao"
+            android:id="@+id/drawerLayout_saoyisao"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_saoYiSao"
+            android:layout_toRightOf="@id/drawerLayout_saoyisao"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_clock"
+            android:id="@+id/drawerLayout_clock"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_clock"
+            android:layout_toRightOf="@id/drawerLayout_clock"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/DrawerLayout_common_layout">
+        <ImageView
+            style="@style/DrawerLayout_common_pict"
+            android:background="@mipmap/drawerlayout_car"
+            android:id="@+id/drawerLayout_drive"/>
+        <TextView
+            style="@style/DrawerLayout_common_TextView"
+            android:text="@string/drawerLayout_Driver"
+            android:layout_toRightOf="@id/drawerLayout_drive"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"/>
+
+
+    <LinearLayout
+        style="@style/DrawerLayout_common_layout"
+        android:orientation="horizontal"
+       >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/drawerLayout_Setting"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/drawerLayout_Logout"
+            android:id="@+id/drawerLayout_Logout"/>
+    </LinearLayout>
+</LinearLayout>
